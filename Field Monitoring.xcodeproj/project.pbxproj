@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61A88EC2E7BB52BE137C5BF8 /* Pods_Field_Monitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */; };
 		9A64F2F71F075ACC00BE4A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */; };
 		9A64F2F91F075ACC00BE4A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64F2F81F075ACC00BE4A42 /* ViewController.swift */; };
 		9A64F2FC1F075ACC00BE4A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A64F2FA1F075ACC00BE4A42 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		40500AEBE66473F3BD5E4A3D /* Pods-Field Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Field Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-Field Monitoring/Pods-Field Monitoring.release.xcconfig"; sourceTree = "<group>"; };
+		773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Field_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A64F2F31F075ACC00BE4A42 /* Field Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Field Monitoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A64F2F81F075ACC00BE4A42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A88EC2E7BB52BE137C5BF8 /* Pods_Field_Monitoring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		61BC87B589EA7D5832B0FD34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,7 +211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
