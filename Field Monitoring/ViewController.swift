@@ -28,8 +28,10 @@ class ViewController: UIViewController {
  
     
     @IBAction func loginButton(_ sender: Any) {
+        let emailValue = email.text
+        let passwordValue = password.text
         
-        let parameters = ["email" : "sample@mail.com", "password" : "sample" ]
+        let parameters = ["email" : emailValue, "password" : passwordValue ]
         let urlPath :String = "https://field-monitoring.herokuapp.com/users/login"
         
         Alamofire.request(urlPath, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:])
@@ -38,12 +40,25 @@ class ViewController: UIViewController {
                     print("Error while fetching colors: \(String(describing: response.result.error))")
                     return
                 }
-                guard let responseJSON = response.result.value as? [String: Any],
+                guard let responseJSON = response.result.value as? [String: String],
                 let firstResult = responseJSON.first?.value else { return }
                 print (responseJSON)
                 print (firstResult)
-            
                 
+                if firstResult == "manager" {
+                    print ("Manager Success")
+                    self.performSegue(withIdentifier:"managerLogin", sender: self)
+                }
+                else if firstResult == "employee"{
+                    print ("Employee Success")
+                    self.performSegue(withIdentifier:"employeeLogin", sender: self)
+                }
+                else{
+                    let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+        
         }
     }
 
