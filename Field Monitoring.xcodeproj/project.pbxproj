@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		594603DE1F2163C800749FDE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594603DD1F2163C800749FDE /* MapViewController.swift */; };
 		61A88EC2E7BB52BE137C5BF8 /* Pods_Field_Monitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */; };
 		9A64F2F71F075ACC00BE4A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */; };
 		9A64F2F91F075ACC00BE4A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64F2F81F075ACC00BE4A42 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		40500AEBE66473F3BD5E4A3D /* Pods-Field Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Field Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-Field Monitoring/Pods-Field Monitoring.release.xcconfig"; sourceTree = "<group>"; };
+		594603DD1F2163C800749FDE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Field_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A64F2F31F075ACC00BE4A42 /* Field Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Field Monitoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */,
 				9A64F2F81F075ACC00BE4A42 /* ViewController.swift */,
 				9A64F2FA1F075ACC00BE4A42 /* Main.storyboard */,
+				594603DD1F2163C800749FDE /* MapViewController.swift */,
 				9A64F30C1F07780400BE4A42 /* EmployeeViewController.swift */,
 				9A64F30A1F07762200BE4A42 /* ManagerViewController.swift */,
 				9A64F2FD1F075ACC00BE4A42 /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 				9A64F30B1F07762200BE4A42 /* ManagerViewController.swift in Sources */,
 				9A64F2F91F075ACC00BE4A42 /* ViewController.swift in Sources */,
 				9A64F30D1F07780400BE4A42 /* EmployeeViewController.swift in Sources */,
+				594603DE1F2163C800749FDE /* MapViewController.swift in Sources */,
 				9A64F2F71F075ACC00BE4A42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

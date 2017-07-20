@@ -19,13 +19,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
-    
 
-    
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
-    
- 
     
     @IBAction func loginButton(_ sender: Any) {
         let emailValue = email.text
@@ -41,27 +37,26 @@ class ViewController: UIViewController {
                     return
                 }
                 guard let responseJSON = response.result.value as? [String: String],
-                let firstResult = responseJSON.first?.value else { return }
-                print (responseJSON)
-                print (firstResult)
+                    let position = responseJSON["position"],
+                    let status = responseJSON["message"] else { return }
+//                    print (responseJSON)
+//                    print (results)
                 
-                if firstResult == "manager" {
-                    print ("Manager Success")
-                    self.performSegue(withIdentifier:"managerLogin", sender: self)
+                if ( status == "success"){
+                    if position == "manager" {
+                        print ("Manager Success")
+                        self.performSegue(withIdentifier:"managerLogin", sender: self)
+                    }
+                    else if position == "employee"{
+                        print ("Employee Success")
+                        self.performSegue(withIdentifier:"employeeLogin", sender: self)
+                    }
                 }
-                else if firstResult == "employee"{
-                    print ("Employee Success")
-                    self.performSegue(withIdentifier:"employeeLogin", sender: self)
-                }
-                else{
+                else {
                     let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
-        
         }
     }
-
-
-
 }
