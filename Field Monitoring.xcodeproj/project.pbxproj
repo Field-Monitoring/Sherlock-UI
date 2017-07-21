@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		594603DE1F2163C800749FDE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594603DD1F2163C800749FDE /* MapViewController.swift */; };
+		594603E11F216E9200749FDE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 594603DF1F216E9200749FDE /* Default.png */; };
+		594603E21F216E9200749FDE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594603E01F216E9200749FDE /* Default@2x.png */; };
+		594603E41F21721200749FDE /* CoordinatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594603E31F21721200749FDE /* CoordinatesViewController.swift */; };
 		61A88EC2E7BB52BE137C5BF8 /* Pods_Field_Monitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */; };
 		9A64F2F71F075ACC00BE4A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */; };
 		9A64F2F91F075ACC00BE4A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A64F2F81F075ACC00BE4A42 /* ViewController.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		40500AEBE66473F3BD5E4A3D /* Pods-Field Monitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Field Monitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-Field Monitoring/Pods-Field Monitoring.release.xcconfig"; sourceTree = "<group>"; };
 		594603DD1F2163C800749FDE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		594603DF1F216E9200749FDE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../../../Downloads/splash_screen/Default.png; sourceTree = "<group>"; };
+		594603E01F216E9200749FDE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../../../Downloads/splash_screen/Default@2x.png"; sourceTree = "<group>"; };
+		594603E31F21721200749FDE /* CoordinatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatesViewController.swift; sourceTree = "<group>"; };
 		773F77EC115D5D61A905E471 /* Pods_Field_Monitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Field_Monitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A64F2F31F075ACC00BE4A42 /* Field Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Field Monitoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,8 @@
 		9A64F2EA1F075ACC00BE4A42 = {
 			isa = PBXGroup;
 			children = (
+				594603DF1F216E9200749FDE /* Default.png */,
+				594603E01F216E9200749FDE /* Default@2x.png */,
 				9A64F2F51F075ACC00BE4A42 /* Field Monitoring */,
 				9A64F2F41F075ACC00BE4A42 /* Products */,
 				62EE839729A6682C97797E61 /* Pods */,
@@ -89,6 +97,7 @@
 				9A64F2F61F075ACC00BE4A42 /* AppDelegate.swift */,
 				9A64F2F81F075ACC00BE4A42 /* ViewController.swift */,
 				9A64F2FA1F075ACC00BE4A42 /* Main.storyboard */,
+				594603E31F21721200749FDE /* CoordinatesViewController.swift */,
 				594603DD1F2163C800749FDE /* MapViewController.swift */,
 				9A64F30C1F07780400BE4A42 /* EmployeeViewController.swift */,
 				9A64F30A1F07762200BE4A42 /* ManagerViewController.swift */,
@@ -162,10 +171,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594603E21F216E9200749FDE /* Default@2x.png in Resources */,
 				9A64F3011F075ACC00BE4A42 /* LaunchScreen.storyboard in Resources */,
 				9A64F2FE1F075ACC00BE4A42 /* Assets.xcassets in Resources */,
 				9A64F2FC1F075ACC00BE4A42 /* Main.storyboard in Resources */,
 				9A64F3091F075DA800BE4A42 /* download.png in Resources */,
+				594603E11F216E9200749FDE /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +239,7 @@
 				9A64F2F91F075ACC00BE4A42 /* ViewController.swift in Sources */,
 				9A64F30D1F07780400BE4A42 /* EmployeeViewController.swift in Sources */,
 				594603DE1F2163C800749FDE /* MapViewController.swift in Sources */,
+				594603E41F21721200749FDE /* CoordinatesViewController.swift in Sources */,
 				9A64F2F71F075ACC00BE4A42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +364,7 @@
 			baseConfigurationReference = D327B0B08DD52BC3A92BCA27 /* Pods-Field Monitoring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Field Monitoring/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RMK-User.Field-Monitoring";
@@ -365,6 +378,7 @@
 			baseConfigurationReference = 40500AEBE66473F3BD5E4A3D /* Pods-Field Monitoring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Field Monitoring/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RMK-User.Field-Monitoring";

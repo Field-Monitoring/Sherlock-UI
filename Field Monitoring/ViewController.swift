@@ -49,7 +49,7 @@ class ViewController: UIViewController {
                     }
                     else if position == "employee"{
                         print ("Employee Success")
-                        self.performSegue(withIdentifier:"employeeLogin", sender: self)
+                        self.performSegue(withIdentifier:"jobSegue", sender: self)
                     }
                 }
                 else {

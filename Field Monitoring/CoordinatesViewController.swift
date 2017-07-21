@@ -1,21 +1,21 @@
 //
-//  EmployeeViewController.swift
+//  CoordinatesViewController.swift
 //  Field Monitoring
 //
-//  Created by R.M.K. Engineering College on 01/07/17.
+//  Created by Ajith Panneerselvam on 21/07/17.
 //  Copyright © 2017 R.M.K. Engineering College. All rights reserved.
 //
 
 import UIKit
 import CoreLocation
 
-class EmployeeViewController: UIViewController,CLLocationManagerDelegate  {
-    
-    let locationManager = CLLocationManager()
+class CoordinatesViewController: UIViewController, CLLocationManagerDelegate {
 
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // For use when the app is open & in the background
         locationManager.requestAlwaysAuthorization()
         
@@ -28,23 +28,22 @@ class EmployeeViewController: UIViewController,CLLocationManagerDelegate  {
             locationManager.desiredAccuracy = kCLLocationAccuracyBest // You can change the locaiton accuary here.
             locationManager.startUpdatingLocation()
         }
-        
     }
     
     // Print out the location to the console
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            let lat = location.coordinate.latitude
-            let long = location.coordinate.longitude
-            print(lat, long)
+            var lat = location.coordinate.latitude
+            var long = location.coordinate.longitude
+            print(location.coordinate.latitude, location.coordinate.longitude)
         }
     }
+
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    
-    
-}
+    }
